@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char firstInitial, lastInitial;
+
+    printf("What is the first letter of your first name?\n");
+    scanf(" %c", &firstInitial);
+
+    printf("What is the first letter of your last name?\n");
+    scanf(" %c", &lastInitial);
+
+    printf("Your initials are: %c%c\n", firstInitial, lastInitial);
+
+    return 0;
+}
