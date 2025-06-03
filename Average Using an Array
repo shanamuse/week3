@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    float numbers[5];
+    float sum = 0.0;
+    int i;
+
+    printf("Please enter five real numbers:\n");
+    printf("First number:\n");
+    scanf("%f", &numbers[0]);
+    printf("Second number:\n");
+    scanf("%f", &numbers[1]);
+    printf("Third number:\n");
+    scanf("%f", &numbers[2]);
+    printf("Fourth number:\n");
+    scanf("%f", &numbers[3]);
+    printf("Fifth number:\n");
+    scanf("%f", &numbers[4]);
+
+    printf("\nThe user entered:\n");
+    for (i = 0; i < 5; i++) {
+        printf("  %.6f", numbers[i]);
+        if (i != 4) { 
+            printf(" then,\n");
+        } else {
+            printf("\n");
+        }
+        sum += numbers[i];
+    }
+
+    printf("\nThe average of these five numbers is: %.6f\n", sum / 5.0);
+
+    return 0;
+}
