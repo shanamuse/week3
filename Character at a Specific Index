@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char sentence[100];
+    int index;
+
+    printf("Write a sentence?\n");
+    scanf(" %[^\n]s", sentence);
+
+    printf("Look up character at index?\n\n");  
+
+    scanf("%d", &index);
+
+    int length = strlen(sentence);
+
+    if (index >= 0 && index < length) {
+        printf("In \"%s\" index %d is the character '%c'.\n", sentence, index, sentence[index]);
+    } else {
+        printf("Index out of bounds.\n");
+    }
+
+    return 0;
+}
