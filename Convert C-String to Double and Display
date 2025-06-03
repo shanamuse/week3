@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    double real_number = 0.0;
+    char text[80];
+
+    printf("> ");
+    scanf("%79s", text);
+
+    real_number = atof(text);
+
+    printf("C-String: %s\n", text);
+    printf("double: %f\n", real_number);
+
+    return 0;
+}
