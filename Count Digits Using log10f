@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float number;
+    int digits;
+
+    printf("Input a number:\n");
+    scanf("%f", &number);
+
+    if (number > 0) {
+        digits = (int)floor(log10f(number)) + 1;
+        printf("%.0f is %d digit(s).\n", number, digits);
+    } else {
+        printf("Invalid input. Please enter a positive number.\n");
+    }
+
+    return 0;
+}
