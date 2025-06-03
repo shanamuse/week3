@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char lower, upper;
+
+    printf("Input a lower case character:\n");
+    scanf(" %c", &lower);
+
+    printf("Input an upper case character:\n");
+    scanf(" %c", &upper);
+
+    printf("\nlower %c equivalent upper is %c.\n", lower, lower - 'a' + 'A');
+    printf("upper %c equivalent lower is %c.\n", upper, upper - 'A' + 'a');
+
+    return 0;
+}
