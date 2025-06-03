@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char digits[9] = {'\0'}; 
+
+    printf("Input 8 digits or less:\n");
+    scanf("%8s", digits);
+
+    for (int i = 0; i < 9; i++) {
+        if (digits[i] == '\0') {
+            printf("digits[%d] is ASCII char: \\x00 (%d)\n", i, digits[i]);
+        } else {
+            printf("digits[%d] is ASCII char: %c (%d)\n", i, digits[i], digits[i]);
+        }
+    }
+
+    return 0;
+}
