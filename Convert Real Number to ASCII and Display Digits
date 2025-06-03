@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float real_number;
+    char text[30]; 
+
+    printf("Enter a real number:\n");
+    scanf("%f", &real_number);
+
+    printf("Converting float input into ASCII C-String array...\n\n");
+
+    sprintf(text, "%.6f", real_number); 
+
+    for (int i = 0; text[i] != '\0'; i++) {
+        printf("Element %d is: '%c' which is ASCII %d\n", i, text[i], text[i]);
+    }
+
+    return 0;
+}
