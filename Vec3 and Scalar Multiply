@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float v[3];
+    float scalar;
+
+    printf("vx?\n");
+    scanf("%f", &v[0]);
+    printf("vy?\n");
+    scanf("%f", &v[1]);
+    printf("vz?\n");
+    scanf("%f", &v[2]);
+
+    printf("\nv = < %.6f, %.6f, %.6f >\n", v[0], v[1], v[2]);
+    printf("\n");
+
+    printf("Scalar Multiplier?\n");
+    scanf("%f", &scalar);
+
+    printf("%.6fv = < %.6f, %.6f, %.6f >\n", scalar, v[0]*scalar, v[1]*scalar, v[2]*scalar);
+
+    return 0;
+}
