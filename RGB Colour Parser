@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    char rLetter, gLetter, bLetter;
+    int rValue, gValue, bValue;
+    int count;
+
+    printf("Input colour:\n");
+    
+    count = scanf(" %c%d%c%d%c%d", &rLetter, &rValue, &gLetter, &gValue, &bLetter, &bValue);
+
+    printf("\nSuccessfully parsed %d out of 6 items.\n", count);
+
+    printf("\nColour channels detected: ( %c, %c, %c )\n\n", rLetter, gLetter, bLetter);
+
+    printf("%c channel's value is %d (0x%x)\n", rLetter, rValue, rValue);
+    printf("%c channel's value is %d (0x%x)\n", gLetter, gValue, gValue);
+    printf("%c channel's value is %d (0x%x)\n", bLetter, bValue, bValue);
+
+    return 0;
+}
