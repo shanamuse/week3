@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char original[6];
+    char copy[6];
+
+    printf("Type in a lowercase five letter word:\n");
+    scanf("%5s", original);
+
+    strcpy(copy, original);
+
+    for (int i = 0; i < 5; i++) {
+        copy[i] = copy[i] - 'a' + 'A';
+    }
+
+    printf("\nOriginal: %s\n", original);
+    printf("\nCopy: %s\n", copy);
+
+    return 0;
+}
