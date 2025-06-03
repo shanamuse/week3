@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float opposite, adjacent, hypotenuse;
+
+    printf("Enter the length of the adjacent side:\n");
+    scanf("%f", &adjacent);
+
+    printf("Enter the length of the opposite side:\n");
+    scanf("%f", &opposite);
+
+    printf("\n");
+
+    hypotenuse = sqrtf(opposite * opposite + adjacent * adjacent);
+
+    printf("The hypotenuse is %.6f in length.\n\n", hypotenuse);
+
+    printf("          +\n");
+    printf("          |\\\n");
+    printf("          | \\\n");
+    printf(" %f|  \\  %.6f\n", opposite, hypotenuse);
+    printf("          |   \\\n");
+    printf("          |    \\\n");
+    printf("          +-----+\n");
+    printf("          %f\n", adjacent);
+
+    printf("\nNote: Right-angle triangle is not drawn to scale!\n");
+
+    return 0;
+}
