@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char firstName[50];
+    char lastName[50];
+    char fullName[100];
+    char reverseFullName[100];
+
+    printf("First name?\n");
+    scanf("%s", firstName);
+    printf("Last name?\n");
+    scanf("%s", lastName);
+
+    printf("\n");
+
+    strcpy(fullName, firstName);
+    strcat(fullName, " ");
+    strcat(fullName, lastName);
+
+    strcpy(reverseFullName, lastName);
+    strcat(reverseFullName, ", ");
+    strcat(reverseFullName, firstName);
+
+    printf("Full name: %s\n", fullName);
+    printf("\n"); // Add the required empty line
+    printf("Last, First: %s\n", reverseFullName);
+
+    return 0;
+}
