@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int firstArray[3], secondArray[3];
+    int sum[3], diff[3], prod[3];
+
+    printf("First Array Setup...\n\n");
+    printf("  Please enter the 1st value:\n");
+    scanf("%d", &firstArray[0]);
+    printf("  Please enter the 2nd value:\n");
+    scanf("%d", &firstArray[1]);
+    printf("  Please enter the 3rd value:\n");
+    scanf("%d", &firstArray[2]);
+
+    printf("\nFirst array is: { %d, %d, %d }\n\n", firstArray[0], firstArray[1], firstArray[2]);
+
+    printf("Second Array Setup...\n");
+    printf("  Please enter the 1st value:\n");
+    scanf("%d", &secondArray[0]);
+    printf("  Please enter the 2nd value:\n");
+    scanf("%d", &secondArray[1]);
+    printf("  Please enter the 3rd value:\n");
+    scanf("%d", &secondArray[2]);
+
+    printf("\nSecond array is: { %d, %d, %d }\n\n", secondArray[0], secondArray[1], secondArray[2]);
+
+    printf("  C..a..l..c..u..l..a..t..i..n..g..\n\n");
+
+    for (int i = 0; i < 3; i++) {
+        sum[i] = firstArray[i] + secondArray[i];
+        diff[i] = firstArray[i] - secondArray[i];
+        prod[i] = firstArray[i] * secondArray[i];
+    }
+
+    printf("Adding corresponding elements: { %d, %d, %d }\n", sum[0], sum[1], sum[2]);
+    printf("\nSubtracting corresponding elements: { %d, %d, %d }\n", diff[0], diff[1], diff[2]);
+    printf("\nMultiplying corresponding elements: { %d, %d, %d }\n", prod[0], prod[1], prod[2]);
+
+    return 0;
+}
