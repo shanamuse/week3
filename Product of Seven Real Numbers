@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float numbers[7];
+    float product = 1.0f;
+
+    for (int i = 0; i < 7; i++) {
+        printf("Input real number %d:\n", i + 1);
+        scanf("%f", &numbers[i]);
+        product *= numbers[i];
+    }
+
+    printf("\nInput was: { %.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f }\n", 
+            numbers[0], numbers[1], numbers[2], numbers[3], numbers[4], numbers[5], numbers[6]);
+
+    printf("\nThe product of the numbers input is: %.2f\n", product);
+
+    return 0;
+}
