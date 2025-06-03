@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    char firstName[32];
+    char lastName[32];
+    char courseName[64];
+
+    printf("First name?\n");
+    scanf("%31s", firstName);
+
+    printf("Last name?\n");
+    scanf("%31s", lastName);
+
+    printf("Course name?\n");
+    scanf(" %[^\n]s", courseName);
+
+    printf("\n%s %s is studying %s.\n", firstName, lastName, courseName);
+
+    return 0;
+}
