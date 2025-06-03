@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int whole_number;
+    char ascii_char;
+    float real_number;
+
+    printf("Whole number?\n");
+    scanf("%d", &whole_number);
+
+    printf("ASCII character?\n");
+    scanf(" %c", &ascii_char); 
+
+    printf("Real number?\n");
+    scanf("%f", &real_number);
+
+    printf("\nThe user's input was:\n\n");
+    printf("Whole number is:     %d\n", whole_number);
+    printf("ASCII character is:  %c\n", ascii_char);
+    printf("Real number is:      %.6f\n", real_number);
+
+    return 0;
+}
